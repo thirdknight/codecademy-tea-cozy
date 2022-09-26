@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, San-Serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  line-height: 2;
+}
+
+a {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrapper {
+  max-width: 1260px;
+  margin: auto;
+}
+
+.header {
+  z-index: 10;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+}
+
+.header-content {
+  height: 69px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: 150px;
+  background-image: url('./images/img-tea-cozy-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.links {
+  display: flex;
+}
+
+.links a{
+  padding: 0.5em;
+  color: seashell;
+}
+
+.banner {
+  position: relative;
+}
+.our-mission {
+  margin-top: 70px;
+  background-image: url('./images/img-mission-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+}
+
+.our-mission .banner {
+  top: 280px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: black;
+}
+
+.featured-tea-flex {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.featured-tea-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 50px;
+  row-gap: 10px;
+}
+
+.featured-tea-card img {
+  height: 200px;
+  width: 300px;
+}
+
+.location {
+  background-image: url('./images/img-locations-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
+
+.location .banner {
+  top: 60px;
+}
+
+.location .banner h2 {
+  margin-bottom: 10px;;
+}
+
+.location-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+  row-gap: 40px;
+  opacity: 1;
+}
+
+.location-card {
+  width: 300px;
+  background-color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer-copyright {
+  display: flex;
+  margin-left: 20px;
+}
+
+@media (max-width: 995px) {
+  .location {
+    height: 1000px;
+  }
+}
